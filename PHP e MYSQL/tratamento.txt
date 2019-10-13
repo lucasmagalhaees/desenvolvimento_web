@@ -1,0 +1,23 @@
+Olá Lucas,
+
+você pode fazer um link simples que redireciona com o "href" para o index.php.
+
+Para mostrar a mensagem, você poderia adicionar uma variavel na sua sessão e no index.php poderia checar se existe essa variavel.
+
+Caso exista, você mostra a mensagem. No caso, você apenas salvaria essa variavel quando a pessoa clicasse o botão. Você pode executar um pequeno script ou função de "logoff" que:
+
+Insere essa variavel na sessão.
+
+Redireciona para o index.php.
+
+Checa se a variavel existe. como ela existe, mostra a mensagem.
+
+Retira todos os demais dados da sessão, deslogando o usuário por completo.
+
+
+
+Outra maneira seria você., ao inves de redirecionar para index.php, você pode redireiconar para a seguinte url:
+
+index.php?mensagem=Esperamos_voce_de_volta!
+
+Isso cria uma varaivel GET que pode ser recuperada com $GET[mensagem]. Assim, você recupera o valor dessa variavel mensagem e mostrar ela na página.

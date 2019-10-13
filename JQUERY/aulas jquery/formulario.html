@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Divs</title>
+
+		<!-- bootstrap - link cdn -->
+
+		
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		
+		<!-- jquery -->
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	
+
+
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				//$('#campo_novo').change(function(){
+			//alert('O elemento foi alterado');
+
+			$('.campo1').change(function(){
+			alert('O elemento foi alterado');
+
+		//.focus();
+		//blur();
+		//change();	
+			});
+			});
+
+		</script>
+
+					
+		</head>
+	<body>
+		
+		<label class="text-danger" style="font-size: 20px">Nome do usuário</label> 
+		<p></p>
+		<input type="text" id="campo_novo" placeholder="Ex: Neymar da Silva Júnior" required>
+
+		<hr>
+
+		<select class="campo1">
+			<option value="1">Primeira opção</option>
+			<option value="2">Segunda opção</option>
+			
+		</select>
+
+
+
+			 
+	</body>
+</html>
